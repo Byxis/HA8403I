@@ -18,6 +18,7 @@ public class Main {
         System.out.println("");
 
         Tortue t1 = new Tortue(12, EspeceEnum.Caroline, true, FoodEnum.fruits, GenreEnum.male);
+        t1.getAge();
 
         System.out.println("En été à Montpellier : 35 degrés celsius valent "+
                 celsius2Farenheit(35)+" en degrés Farenheit");
