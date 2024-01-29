@@ -115,6 +115,5 @@ enum HabitatEnum
 enum GenreEnum
 {
     male,
-    femelle
+    female
 }
-
