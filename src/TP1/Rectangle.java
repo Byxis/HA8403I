@@ -1,5 +1,6 @@
 package TP1;
 
+@SuppressWarnings("ALL")
 public class Rectangle {
 
     private double longueur;
@@ -76,6 +77,7 @@ public class Rectangle {
     }
 }
 
+@SuppressWarnings("ALL")
 class Color
 {
     private int R;
@@ -83,6 +85,7 @@ class Color
     private int B;
 }
 
+@SuppressWarnings("ALL")
 class Position
 {
     private double X;

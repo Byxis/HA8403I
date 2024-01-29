@@ -1,5 +1,6 @@
 package TP1;
 
+@SuppressWarnings("ALL")
 public class Tortue
 {
     private int age;
@@ -94,24 +95,28 @@ public class Tortue
     }
 }
 
+@SuppressWarnings("ALL")
 enum EspeceEnum
 {
     Herman,
     Caroline
 }
 
+@SuppressWarnings("ALL")
 enum FoodEnum
 {
     feuilles,
     fruits
 }
 
+@SuppressWarnings("ALL")
 enum HabitatEnum
 {
     garrigues,
     maqusi
 }
 
+@SuppressWarnings("ALL")
 enum GenreEnum
 {
     male,
