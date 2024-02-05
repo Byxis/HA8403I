@@ -1,10 +1,16 @@
 package TP2;
 
+import TP2.TD.Etudiant;
+import TP2.TD.Pays;
+
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String args[]) {
+        /*
         System.out.println("Création d'un rectangle");
         Scanner clavier = new Scanner(System.in);
         System.out.println("Longueur : ");
@@ -21,6 +27,11 @@ public class Main {
         Rectangle r = new Rectangle(longueur, largeur, Couleur.valueOf(couleur), x, y);
 
         System.out.println(r);
+        */
+
+        Etudiant et = new Etudiant(LocalDate.now(), "1_SALUT", Pays.Francais, 15, 19, 18);
+        System.out.println(et.ligneResultats());
+        System.out.println(et);
     }
 
 }
