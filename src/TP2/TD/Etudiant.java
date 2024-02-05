@@ -56,7 +56,7 @@ public class Etudiant {
         return this.age;
     }
 
-    public LocalDate getBirthDate()
+    public LocalDate getDateNaissance()
     {
         return this.dateNaissance;
     }
