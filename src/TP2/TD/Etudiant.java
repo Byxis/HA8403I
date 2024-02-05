@@ -18,8 +18,9 @@ public class Etudiant {
     {
         this.dateNaissance = LocalDate.now();
         this.age = getAgeFromBirthDate(dateNaissance);
-        this.codeIns = "";
+        this.codeIns = "DEFAULT";
         this.codePays = Pays.Francais;
+        this.notes = new double[]{0, 0, 0};
     }
     public Etudiant(LocalDate dateNaissance, String codeIns, Pays codePays, double[] notes)
     {
