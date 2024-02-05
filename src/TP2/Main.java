@@ -3,6 +3,7 @@ package TP2;
 import TP2.TD.Etudiant;
 import TP2.TD.Pays;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -28,7 +29,7 @@ public class Main {
         System.out.println(r);
         */
 
-        Etudiant et = new Etudiant(new Date(), "1_SALUT", Pays.Francais, 15, 19, 18);
+        Etudiant et = new Etudiant(LocalDate.now(), "1_SALUT", Pays.Francais, 15, 19, 18);
         System.out.println(et.ligneResultats());
         System.out.println(et);
     }
