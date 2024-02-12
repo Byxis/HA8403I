@@ -4,8 +4,6 @@ import TP2.TD.Etudiant;
 import TP2.TD.Pays;
 
 import java.time.LocalDate;
-import java.util.Date;
-import java.util.Scanner;
 
 public class Main {
 
@@ -29,7 +27,8 @@ public class Main {
         System.out.println(r);
         */
 
-        Etudiant et = new Etudiant(LocalDate.now(), "1_SALUT", Pays.Francais, 15, 19, 18);
+        Etudiant et = new Etudiant(LocalDate.of(2004, 4, 27), "1_SALUT", Pays.Francais, 15, 19, 18);
+        et.saisie();
         System.out.println(et.ligneResultats());
         System.out.println(et);
     }
