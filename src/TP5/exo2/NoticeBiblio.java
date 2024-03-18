@@ -5,10 +5,10 @@ import java.util.ArrayList;
 
 public class NoticeBiblio {
 
-    private String ISBN;
-    private String title;
+    private final String ISBN;
+    private final String title;
     private String subtitle = "";
-    private PublicCible publicCible;
+    private final PublicCible publicCible;
     private final ArrayList<Exemplaire> exemplaires = new ArrayList<Exemplaire>();
     private final ArrayList<Emprunt> emprunts = new ArrayList<Emprunt>();
 

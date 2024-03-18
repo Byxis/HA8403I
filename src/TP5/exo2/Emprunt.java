@@ -4,11 +4,11 @@ import java.time.LocalDate;
 
 public class Emprunt {
 
-    private Abonne abonne;
-    private Exemplaire exemplaire;
+    private final Abonne abonne;
+    private final Exemplaire exemplaire;
 
-    private LocalDate dateEmprunt;
-    private LocalDate dateRetour;
+    private final LocalDate dateEmprunt;
+    private final LocalDate dateRetour;
 
     public Emprunt(Abonne abonne, Exemplaire exemplaire, LocalDate dateEmprunt, LocalDate dateRetour)
     {

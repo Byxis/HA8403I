@@ -2,7 +2,7 @@ package TP4.partie2;
 
 public class Lettre extends ObjetPostal {
 
-    private boolean isUrgent;
+    private final boolean isUrgent;
 
     public Lettre(String ori, String des, int codeP, double poids
         , double volume, Recommendation taux, boolean isUrgent)
@@ -44,12 +44,11 @@ public class Lettre extends ObjetPostal {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder("Lettre ");
-        sb.append(super.getCodePostal()).append("/");
-        sb.append(super.getDestination()).append("/");
-        sb.append(super.getRecommendation()).append("/");
-        sb.append(this.isUrgent());
-        return sb.toString();
+        String sb = "Lettre " + super.getCodePostal() + "/" +
+                super.getDestination() + "/" +
+                super.getRecommendation() + "/" +
+                this.isUrgent();
+        return sb;
     }
 
     public boolean isUrgent()

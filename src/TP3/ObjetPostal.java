@@ -2,12 +2,12 @@ package TP3;
 
 public abstract class ObjetPostal {
 
-    private String origin;
-    private String destination;
-    private int codePostal;
-    private double poids; // en gramme
-    private double volume; // en m3
-    private Recommendation taux;
+    private final String origin;
+    private final String destination;
+    private final int codePostal;
+    private final double poids; // en gramme
+    private final double volume; // en m3
+    private final Recommendation taux;
 
     public ObjetPostal(String ori, String des, int codeP, double poids
             , double volume, Recommendation taux)

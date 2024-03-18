@@ -114,11 +114,10 @@ public abstract class SacPostal {
 
     public String toString()
     {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Code: ").append(codePostal).append("\n");
-        sb.append("Capacite: ").append(getCapacite()).append("/").append(this.getCapaciteMax()).append("\n");
-        sb.append("Nb: ").append(getCapacite()).append("/").append(this.getCapaciteMax()).append("\n");
-        sb.append("Colis: ").append(objects);
-        return sb.toString();
+        String sb = "Code: " + codePostal + "\n" +
+                "Capacite: " + getCapacite() + "/" + this.getCapaciteMax() + "\n" +
+                "Nb: " + getCapacite() + "/" + this.getCapaciteMax() + "\n" +
+                "Colis: " + objects;
+        return sb;
     }
 }

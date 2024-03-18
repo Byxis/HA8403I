@@ -2,8 +2,8 @@ package TP3;
 
 public class Colis extends ObjetPostal{
 
-    private String contenu;
-    private double valeur;
+    private final String contenu;
+    private final double valeur;
 
     public Colis(String ori, String des, int codeP, double poids
             , double volume, Recommendation taux, String contenu
@@ -46,13 +46,12 @@ public class Colis extends ObjetPostal{
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder("Colis ");
-        sb.append(super.getCodePostal()).append("/");
-        sb.append(super.getDestination()).append("/");
-        sb.append(super.getRecommendation()).append("/");
-        sb.append(super.getVolume()).append("/");
-        sb.append(this.getValeur());
-        return sb.toString();
+        String sb = "Colis " + super.getCodePostal() + "/" +
+                super.getDestination() + "/" +
+                super.getRecommendation() + "/" +
+                super.getVolume() + "/" +
+                this.getValeur();
+        return sb;
     }
 
     public String getContenu() {
