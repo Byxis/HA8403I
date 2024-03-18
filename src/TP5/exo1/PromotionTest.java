@@ -33,11 +33,11 @@ p.getEtudiants().add(e3);*/
         System.out.println("\n---PROMO VIDE Admis----\n"+p.admis());
         System.out.println("\n---FIN PROMO VIDE----\n");
 // tester le cas g´en´eral
-        p.inscrire(e1);p.inscrire(e2);
-        p.inscrire(e2);// ne sera pas r´einscrit (pas de doublon)
-        p.inscrire(e3);p.inscrire(e4);
-        p.inscrire(e5);p.inscrire(e6);
-        p.inscrire(e7);
+        p.inscrire("1", e1);p.inscrire("2", e2);
+        p.inscrire("2", e2);// ne sera pas r´einscrit (pas de doublon)
+        p.inscrire("3", e3);p.inscrire("4", e4);
+        p.inscrire("5", e5);p.inscrire("6", e6);
+        p.inscrire("7", e7);
         System.out.println("\n-------\n"+p.getEtudiants());
         System.out.println("\n-------\n"+p.moyenneGenerale());
         System.out.println("\n-------\n"+p.recherche("Astrid"));

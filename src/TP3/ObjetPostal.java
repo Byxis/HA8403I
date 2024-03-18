@@ -9,10 +9,6 @@ public abstract class ObjetPostal {
     private double volume; // en m3
     private Recommendation taux;
 
-    public abstract double tarifAff();
-    public abstract double tarifRemb();
-    public abstract String toString();
-
     public ObjetPostal(String ori, String des, int codeP, double poids
             , double volume, Recommendation taux)
     {
@@ -28,6 +24,10 @@ public abstract class ObjetPostal {
     {
         return taux;
     }
+
+    public abstract double tarifAff();
+    public abstract double tarifRemb();
+    public abstract String toString();
 
     public String getOrigin() {
         return origin;
