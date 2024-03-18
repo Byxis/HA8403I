@@ -182,15 +182,14 @@ public class Etudiant {
     }
 
     public static String templateResultats() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Nom ").append(" - ");
-        sb.append("Age ").append(" - ");
-        sb.append("Date de naissance ").append(" - ");
-        sb.append("Code pays ").append(" - ");
-        sb.append("Notes ").append(" - ");
-        sb.append("Moyenne ").append(" - ");
-        sb.append("Mention ");
-        return sb.toString();
+        String sb = "Nom " + " - " +
+                "Age " + " - " +
+                "Date de naissance " + " - " +
+                "Code pays " + " - " +
+                "Notes " + " - " +
+                "Moyenne " + " - " +
+                "Mention ";
+        return sb;
     }
 
     public String ligneResultats() {

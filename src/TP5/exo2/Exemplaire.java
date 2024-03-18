@@ -4,7 +4,7 @@ public class Exemplaire {
 
     private boolean isEmprunte;
     private boolean isInReparation;
-    private Etat etat;
+    private final Etat etat;
 
     public Exemplaire(Etat etat)
     {

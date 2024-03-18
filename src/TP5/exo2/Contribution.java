@@ -2,9 +2,9 @@ package TP5.exo2;
 
 public class Contribution {
 
-    private Personne author;
-    private NoticeBiblio ouvrage;
-    private String role;
+    private final Personne author;
+    private final NoticeBiblio ouvrage;
+    private final String role;
 
     public Contribution(Personne author, NoticeBiblio ouvrage, String role)
     {

@@ -7,7 +7,7 @@ public class Rectangle {
     private double longueur;
     private double largeur;
     private Couleur couleur;
-    private Point position;
+    private final Point position;
     public static final int nbCotes = 4;
 
     public Rectangle(double _longueur, double _largeur, Couleur _couleur)

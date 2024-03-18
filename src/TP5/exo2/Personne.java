@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Personne {
 
-    private String nom;
-    private String prenom;
-    private int age;
+    private final String nom;
+    private final String prenom;
+    private final int age;
 
     private final ArrayList<Contribution> contributions = new ArrayList<>();
 
