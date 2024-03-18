@@ -1,6 +1,8 @@
 package TP4.partie1;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class Promotion {
 
@@ -28,7 +30,7 @@ public class Promotion {
 
     public ArrayList<Etudiant> getEtudiants()
     {
-        return this.etudiants;
+        return (ArrayList<Etudiant>) Collections.unmodifiableList(this.etudiants);
     }
 
     public Etudiant getEtudiant(int id)
