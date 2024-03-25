@@ -19,6 +19,7 @@ public class Promotion {
 
     public Promotion(String name, int annee)
     {
+
         this.name = name;
         this.annee=annee;
     }
