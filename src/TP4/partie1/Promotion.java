@@ -29,9 +29,9 @@ public class Promotion {
 
     /*----------------------- Getters ------------------------*/
 
-    public Collection<Etudiant> getEtudiants()
+    public ArrayList<Etudiant> getEtudiants()
     {
-        return this.etudiants;
+        return (ArrayList<Etudiant>) Collections.unmodifiableList(this.etudiants);
     }
 
     public Etudiant getEtudiant(int id)
