@@ -19,9 +19,11 @@ public abstract class PieceComposite extends Piece {
     public String toString()
     {
         StringBuilder sb = new StringBuilder(super.toString());
+        sb.append("\n");
+        //ici il faudrait faire du reccursif pour afficher le bon nombre de tabulation
         for(Piece p : pieces)
         {
-            sb.append("   ").append(p.nom).append(" - ").append(p.prefix).append(p.reference).append("\n");
+            sb.append("   ").append(p.toString()).append("\n");
         }
         return sb.toString();
     }

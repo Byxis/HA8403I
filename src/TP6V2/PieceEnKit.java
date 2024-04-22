@@ -14,6 +14,7 @@ public class PieceEnKit extends PieceComposite {
     @Override
     public int dureeFabrication() {
         int duree = pieces.get(0).dureeFabrication();
+        //on pourrait le faire en 100% recursif
         for(Piece p : pieces)
         {
             if(p.dureeFabrication() > duree)
@@ -27,6 +28,7 @@ public class PieceEnKit extends PieceComposite {
     @Override
     public int dureeGarantie() {
         int duree = pieces.get(0).dureeGarantie();
+        //on pourrait le faire en 100% recursif
         for(Piece p : pieces)
         {
             if(p.dureeGarantie() < duree)
@@ -39,6 +41,7 @@ public class PieceEnKit extends PieceComposite {
 
     @Override
     public double prix() {
+        //on pourrait le faire en 100% recursif
         double prix = 0;
         for(Piece p : pieces)
         {
