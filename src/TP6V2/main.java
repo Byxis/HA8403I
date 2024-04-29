@@ -9,18 +9,17 @@ public class main {
         PieceDeBase visse = new PieceDeBase("visse", "01", 0.5, 1, 1);
         PieceDeBase clou = new PieceDeBase("clou", "02", 0.3, 1, 1);
         PieceDeBase planche = new PieceDeBase("planche", "03", 3, 2, 2);
-        clou.affiche();
+        //clou.affiche();
 
-        chaise.ajoute(visse);
         chaise.ajoute(visse);
         chaise.ajoute(clou);
         chaise.ajoute(planche);
-        chaise.affiche();
+        //chaise.affiche();
 
         PieceEnKit chaise2 = new PieceEnKit("chaise2", "05", 5);
         chaise2.ajoute(chaise);
         chaise2.ajoute(chaise);
         chaise2.ajoute(clou);
-        chaise2.affiche();
+        chaise2.afficheRec();
     }
 }

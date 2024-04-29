@@ -15,7 +15,7 @@ public class PieceAssemblee extends PieceComposite {
     @Override
     public int dureeFabrication() {
         int fabrication = pieces.get(0).dureeFabrication();
-        //on pourrait le faire en 100% recursif
+        //on pourrait le faire en 100% recursif (déjà fait ailleurs)
 
         for(Piece p : pieces)
         {
@@ -30,7 +30,7 @@ public class PieceAssemblee extends PieceComposite {
     @Override
     public int dureeGarantie() {
         int garantie = pieces.get(0).dureeGarantie();
-        //on pourrait le faire en 100% recursif
+        //on pourrait le faire en 100% recursif (déjà fait ailleurs)
 
         for(Piece p : pieces)
         {
@@ -45,7 +45,7 @@ public class PieceAssemblee extends PieceComposite {
     @Override
     public double prix() {
         double prix = 0;
-        //on pourrait le faire en 100% recursif
+        //on pourrait le faire en 100% recursif (déjà fait ailleurs)
         for(Piece p : pieces)
         {
             prix += p.prix();
